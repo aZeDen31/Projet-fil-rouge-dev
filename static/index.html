@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Fil Rouge | Accueil</title>
+    <meta name="description" content="Découvrez notre projet innovant. Une expérience premium et immersive.">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <h1>L'Innovation au cœur de votre <span style="color: var(--primary);">Expérience</span>.</h1>
+                    <p>
+                        SPOTIFIÉ est une plateforme de streaming musical qui vous permet de découvrir et d'écouter vos titres préférés.
+                    </p>
+                    <p>
+                        Si vous souhaitez découvrir de nouveaux artistes et de nouvelles musiques, cliquez sur démarrer, et swipez !
+                    </p>
+                    <div class="hero-actions">
+                        <a href="login.html" class="btn-login" style="padding: 1rem 2.5rem; font-size: 1.1rem;">Démarrer</a>
+                    </div>
+                </div>
+                <div class="hero-image reveal" style="animation-delay: 0.2s;">
+                    <img src="../img/fille-casque.png" alt="Illustration projet fil rouge">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 4rem 0; border-top: 1px solid var(--glass-border); text-align: center; color: var(--text-muted);">
+        <div class="container">
+            <p>&copy; 2026 Projet Fil Rouge. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="header-loader.js"></script>
+    <script>
+        // Simple reveal animation observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

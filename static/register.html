@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPOTIFIÉ - Connexion</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h2>Inscription</h2>
+            </div>
+            <div class="login-body">
+                <form action="/register" method="post" class="login-form">
+                    <div class="form-group email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group password">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="form-group password">
+                        <label for="password">Confirmer le mot de passe</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <button type="submit" class="btn-login">S'inscrire</button>
+                </form>
+                <p>Déjà un compte ? <a href="login.html" class="login-register">Se connecter</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="header-loader.js"></script>
+</body>
+</html>
